@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning Math</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Cinzel", serif;
+      background: black;
+      color: #e0e0e0;
+      overflow-x: hidden;
+      position: relative;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* Starry parallax background */
+    body::before, body::after {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 200%;
+      height: 200%;
+      background: transparent url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+      animation: moveStars 100s linear infinite;
+      z-index: -2;
+    }
+    body::after {
+      animation-duration: 200s;
+      opacity: 0.5;
+      z-index: -3;
+    }
+    @keyframes moveStars {
+      from { transform: translate(0, 0); }
+      to { transform: translate(-500px, -500px); }
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(3px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #ffccff;
+      text-shadow: 0 0 15px #ff33cc, 0 0 30px #660066;
+    }
+    header h2 {
+      font-size: 1.2rem;
+      color: #ccccff;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    /* Sections with hover expand */
+    section {
+      margin: 2rem 0;
+      border-left: 3px solid #660066;
+      padding-left: 1rem;
+      transition: all 0.5s ease;
+    }
+
+    section h3 {
+      font-size: 1.6rem;
+      cursor: pointer;
+      color: #ff99ff;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    section h3:hover {
+      color: #ff33cc;
+      transform: translateX(10px) scale(1.05);
+      text-shadow: 0 0 10px #ff33cc;
+    }
+
+    section p, section ul {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: all 0.8s ease;
+    }
+
+    section:hover p,
+    section:hover ul {
+      max-height: 2000px;
+      opacity: 1;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0,0,0,0.8);
+      color: #ccc;
+      font-size: 0.8rem;
+      margin-top: 2rem;
+    }
+    footer a {
+      color: #ff99ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>We will learn Math our Way</h1>
+    <h2>Foundational math & coding...</h2>
+  </header>
+
+  <div class="content">
+
+    <section>
+      <h3>Numbers</h3>
+      <p>To understand Math as we know it, the difficult strew of numbers and rules, we need to look at the foundations of it, the very beginning of all theories as we know it. We need to build a relationship of sort with the subject, that of being drawn to it...then we master it </p>
+
+      <p>Our journey starts with numbers basically...we go back in time to understanding the <b>abacus</b>...yes the primary level concept of understanding how numbers like up to make this huge number by simply stripping it into <i>positions</i>. Well it is the tens, and units concept that we did at primary level, at Grade 9 level we expand to understanding the concept of significant numbers...</p>
+
+      <p>What is the concept of signifcant numbers by the way?</p>
+      <p>What is rounding up/ rounding down all about?</p>
+      <p>While we parley about numbers, what is the Cartesian plane all about? </p>
+      <p>What did we say about HCF, LCF?</p>
+
+      <ul>Memory Jog:</ul>
+      <p>Remember in primary school we had the issue of readily saying "it can't" when we encountered a problem like 2 - 10? At Grade 9 we have a way to make it happen, thus the Cartesian plane! What is -2 - 2?</p>
+    </section>
+
+    <section>
+      <h3>Algebra</h3>
+      <p>Well let's keep it moving, we have covered the first part of our journey, now we know numbers. We now have to manipulate them using letters. Yes, pairing numbers with letters...like this 2y + 7 = 10. Such kind! </p>
+
+      <p>Well, we might have <i>actually</i> met this concept in primary school. We are simply building on it...remember this: 6 +_ = 10 (a) 3 (b) 4 (c) 5 (d) 7 </p>
+
+      <p>In other words all we are being asked is what can we use to replace y to satisfy the equation that 2 parts of y, a <b>variable</b> plus 7 is equals to 10, the same thing the multiple choice asks. That is how we have to think of it. Don't forget to transpose, and the sign change rule! Lovely </p>
+
+      <p>How do we simplify algebraic fractions involving division? </p>
+    </section>
+
+    <section>
+      <h3>Polynomials</h3>
+      <p>Well, lets add on some flesh on our algebra, a bit of rules actually. What on earth are polynomials? What is a coefficient? This topic is quite important and Grade 10 will build on from this...That's the thing with Math, concepts build on from others</p>
+
+      <p>What did we say is a polynomial by the way? ...A polynomial is a math sentence made up of numbers and variables like <i>x</i> that can be added, subtracted or multiplied together like <i>3x^ +5x+2</i></p>
+
+      <p>We agreed that we had around three types of polynomials...Binomial, Monic and ..?</p>
+
+      <p>We agreed that when solving polynomials, we are guided by the constant value and the coeffiecient whose product has to be the sum of the middle value by factors...remember that trick? We also worked on using the difference of squares concept, do you remember that one too? Can you factorise an expression involving a binomial?</p>
+    </section>
+
+    <section>
+      <h3>Laws of Exponents</h3>
+      <p>Well, well, what is an exponent? We covered several ways to solve problems involving exponents. We agreed that therea are a set of rules to follow in order to manipulate expressions with exponents. These rules apply to expressions with the same base or when combining bases, and they aid in calculating. What is the base, what is an exponent?? </p>
+
+      <p>Remember the product rule? The Quotient rule? The Power rule? Zero exponent rule?...We covered 3 more...what are those? </p>
+    </section>
+
+    <section>
+      <h3>Linear equations on graphs</h3>
+      <p>Our ordeal with linear equations will not end, they are central to quite a number of concepts in our math journey. Now we use them in plotting graphs....</p>
+
+      <p>By the way what is the x-axis, y-axis, Cartesian plane? Can you visualise coordinates, like A(3, -1). Well, linear equations simply use equations to plot points on graphs under an understanding that if <i>x</i> is this, <i>y</i> is therefore that. It describes a relationship...</p>
+    </section>
+
+    <section>
+      <h3>Polygons</h3>
+      <p>We covered calculating areas of plane shapes. How to calculate area of a circle, of a trapezium, of a rhombus, of a kite? Practise dealing with solid shapes too, like the prisms and cones!</p>
+    </section>
+
+    <section>
+      <h3>Pythagorean Theorem</h3>
+      <p>We learnt about the classic combinations like the 3,4,5 triangle and what else...? </p>
+
+      <p>Recap: We use the theory to solve for unknown sides on <b>right angled triangles</b> and we know that the original formula involves the hypotenuse as the subject. By the way what is the hypotenuse???</p>
+
+      <p>This is the formula in its original form: c^ = a^ + b^. We learnt about exponents some time back, and we know them right? Take note that we have to make the rest of the sides the subject if we are finding their lengths, and therefore have to be mindful when transposing to change signs to negative. <b> Please remember that!</b></p>
+    </section>
+
+    <section>
+      <h3>Triangles</h3>
+      <p>We covered three or so types of triangles, what are those? What are base angles? We covered such terms as supplementary angles, complementary angles, conjugate angles, interior angles and exterior angles...Practise more...</p>
+    </section>
+
+  </div>
+
+  <footer>
+  &reg; MathWiz @2025 |
+  <a href="mailto:willardmasarat@gmail.com">
+    <i class="fa-solid fa-envelope"></i> Email Me
+  </a>
+</footer>
+
+</body>
+</html>
